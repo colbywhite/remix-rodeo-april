@@ -9,8 +9,62 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
     return (
-        <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
+        <div
+            style={{
+                fontFamily: 'system-ui, sans-serif',
+                lineHeight: '1.8',
+                padding: '1rem 2rem'
+            }}
+        >
             <h1>Remix Rodeo 🤠</h1>
+            <h2>Prompt</h2>
+            <p>Build a restaurant ordering app.</p>
+            <h3>Examples</h3>
+            <ul>
+                <li>
+                    <a href="https://order.via313.com/locations/cedarparktx/menu">
+                        Via 313
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ordering.torchys.com/online/order/menu">
+                        Torchy's Tacos
+                    </a>
+                </li>
+                <li>
+                    <a href="https://order.toasttab.com/online/stiles-switch-bbq-cedar-park">
+                        Stiles Switch BBQ
+                    </a>
+                </li>
+            </ul>
+            <h2>Acceptance Criteria</h2>
+            <ol>
+                <li>
+                    <strong>Must have</strong> a marketing landing page
+                </li>
+                <li>
+                    <strong>Must have</strong> a menu with all of the orderable
+                    items
+                </li>
+                <li>
+                    <strong>Must have</strong> a cart experience
+                </li>
+                <li>
+                    <strong>Must have</strong> a guest ordering experience
+                </li>
+            </ol>
+            <h3>Stretch goals</h3>
+            <ol>
+                <li>
+                    Logged-in ordering experience
+                    <ul>
+                        <li>Favorites</li>
+                        <li>Recent orders</li>
+                        <li>Payment methods</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2>Resources</h2>
             <ul>
                 <li>
                     <a
