@@ -50,7 +50,7 @@ export default function Index() {
                     <strong>Must have</strong> a cart experience
                 </li>
                 <li>
-                    <strong>Must have</strong> a guest ordering experience
+                    <strong>Must have</strong> a (fake) checkout experience
                 </li>
             </ol>
             <h3>Stretch goals</h3>
