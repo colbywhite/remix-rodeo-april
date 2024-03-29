@@ -30,14 +30,10 @@ export default function Index() {
                     ,{' '}
                     <a href="https://remix.run/docs/en/main/discussion/progressive-enhancement">
                         progressive enhancement
-                    </a>
-                    ,{' '}
-                    <a href="https://remix.run/docs/en/main/discussion/pending-ui">
-                        optimistic UI
                     </a>{' '}
                     and{' '}
-                    <a href="https://remix.run/docs/en/main/discussion/progressive-enhancement">
-                        progressive enhancement
+                    <a href="https://remix.run/docs/en/main/discussion/pending-ui">
+                        optimistic UI
                     </a>{' '}
                     to make your app shine!
                 </p>
