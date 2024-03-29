@@ -12,7 +12,7 @@ export default function Index() {
     return (
         <div className="wrapper">
             <header>
-                <h1>Remix Rodeo 🤠</h1>
+                <h1>💿 Remix Rodeo 🤠</h1>
             </header>
             <main>
                 <h2>Prompt</h2>

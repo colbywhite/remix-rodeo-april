@@ -85,20 +85,22 @@ ol {
 
 header {
     grid-column: 1 / -1;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     color: white;
     font-size: 2rem;
     background-color: wheat;
     border-bottom: 2px solid black;
-    background-image: url(https://res.cloudinary.com/setholito/image/upload/v1650167556/unsplash/mj-tangonan-wKfTNWaDYgs-unsplash-cropped.jpg);
+    background-image: url(./images/lee-pigott-B3SoLw5pM4s-unsplash.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top left;
     background-size: cover;
 }
 
 header h1 {
     margin-bottom: 0;
+    text-shadow: 4px 4px 8px rgba(53, 53, 53, 1);
 }
 
 aside,
