@@ -1,0 +1,185 @@
+/* JOSH COMEAU'S RESET */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ==================== */
+
+html,
+body {
+    margin: 0;
+    font-family: Helvetica, 'system-ui, sans-serif';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin-bottom: 1rem;
+}
+
+header {
+    grid-column: 1 / -1;
+    padding: 2rem 2rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    background-color: wheat;
+    border-bottom: 2px solid black;
+    background-image: url(https://res.cloudinary.com/setholito/image/upload/v1650167556/unsplash/mj-tangonan-wKfTNWaDYgs-unsplash-cropped.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+aside,
+main {
+    padding: 0 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+aside {
+    grid-column: 1 / -1;
+}
+
+main {
+    grid-column: 1 / -1;
+}
+
+ol,
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.menu-item {
+    grid-column: span 12;
+}
+
+.menu-item img {
+    margin-block-end: 1rem;
+    border-radius: 12px;
+}
+
+/* Custom, iPhone Retina */
+/* @media only screen and (min-width: 320px) {} */
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+    .menu-item {
+        grid-column: span 6;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .menu-item {
+        grid-column: span 3;
+    }
+
+    aside {
+        grid-column: 8 / 11;
+        padding: 1rem 2rem;
+    }
+
+    main {
+        grid-column: 3 / 8;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
