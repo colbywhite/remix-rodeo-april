@@ -18,13 +18,13 @@ export default function MenuItemRoute() {
 
     return (
         <>
-            <div className="px-4">
+            <div>
                 <h1 className="title is-3">Details</h1>
                 <Link className="button is-outline mb-4" to="/menu">
                     <ArrowBigLeft className="mr-2" /> Back to menu
                 </Link>
             </div>
-            <div className="columns px-4">
+            <div className="columns">
                 <div className="column">
                     <figure className="image">
                         <img src={item.image} alt={item.name} />

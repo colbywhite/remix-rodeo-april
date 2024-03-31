@@ -11,7 +11,7 @@ async function generateMenuItems(numItems) {
             image: faker.image.urlLoremFlickr({
                 width: 300,
                 height: 300,
-                category: 'food,american,bistro'
+                category: 'food,sandwhich,salad'
             }),
             name: faker.lorem.words(),
             price: faker.commerce.price({

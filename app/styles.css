@@ -9,6 +9,10 @@
     }
 }
 
+.rounded {
+    border-radius: 12px;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         a {
@@ -19,7 +23,6 @@
 
 .remix-rodeo-banner {
     padding: 2rem;
-    margin-bottom: 2rem;
     text-align: center;
     border-bottom: 2px solid black;
     background-image: url(./images/lee-pigott-B3SoLw5pM4s-unsplash.jpg);
