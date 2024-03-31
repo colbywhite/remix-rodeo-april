@@ -32,7 +32,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
                         <h1>💿 Remix Rodeo 🤠</h1>
                     </div>
                 </header>
-                <main className="container px-3">{children}</main>
+                <main className="container px-3 pb-6">{children}</main>
+                <footer className="footer">
+                    <div className="container">
+                        <div className="px-3">
+                            Styled with <a href="https://bulma.io/">Bulma</a>
+                        </div>
+                    </div>
+                </footer>
                 <ScrollRestoration />
                 <Scripts />
             </body>
