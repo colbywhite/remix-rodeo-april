@@ -1,18 +1,9 @@
-import type { MetaFunction } from '@remix-run/node';
-import { LinkList } from '../components/LinkList';
-import { Link } from '@remix-run/react';
+import { LinkList } from '~/components/LinkList';
 
-export const meta: MetaFunction = () => {
-    return [
-        { title: 'Remix Rodeo' },
-        { name: 'description', content: 'Welcome to Remix Rodeo!' }
-    ];
-};
-
-export default function Index() {
+export default function Route() {
     return (
-        <div className="columns content px-4">
-            <div className="column">
+        <>
+            <main>
                 <h3 className="title is-3">Prompt</h3>
                 <p>Build a restaurant ordering app.</p>
                 <p>
@@ -45,16 +36,15 @@ export default function Index() {
                     instructional use but can also be forked and used as a
                     starter for your project.
                 </p>
-                <p>
-                    A sample menu has been created at{' '}
-                    <Link to="menu">/menu</Link>. Feel free to also use these
-                    additional assets:
-                </p>
                 <LinkList
                     items={[
                         {
                             label: 'Menu JSON',
                             href: 'https://github.com/remix-austin/remix-rodeo-april/blob/main/app/menu.json'
+                        },
+                        {
+                            label: 'Menu route',
+                            href: 'https://github.com/remix-austin/remix-rodeo-april/blob/main/app/routes/menu.tsx'
                         },
                         {
                             label: 'Menu generator script',
@@ -100,8 +90,8 @@ export default function Index() {
                         }
                     ]}
                 />
-            </div>
-            <div className="column">
+            </main>
+            <aside>
                 <h3 className="title is-3">Remix Resources</h3>
                 <LinkList
                     items={[
@@ -139,7 +129,7 @@ export default function Index() {
                         }
                     ]}
                 />
-            </div>
-        </div>
+            </aside>
+        </>
     );
 }

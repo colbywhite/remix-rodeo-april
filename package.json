@@ -13,6 +13,9 @@
   "dependencies": {
     "@remix-run/node": "^2.8.1",
     "@remix-run/react": "^2.8.1",
+    "bulma": "^1.0.0",
+    "just-kebab-case": "^4.2.0",
+    "lucide-react": "^0.363.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
