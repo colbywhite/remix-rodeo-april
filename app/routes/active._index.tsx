@@ -7,7 +7,6 @@ export async function loader() {
         .from('orders')
         .select('*')
 
-
     if (error) {
         console.log('Error loading journal entries', error);
     }
