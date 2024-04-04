@@ -17,12 +17,14 @@
     "bulma": "^1.0.0",
     "just-kebab-case": "^4.2.0",
     "lucide-react": "^0.363.0",
+    "luxon": "^3.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@remix-run/dev": "^2.8.1",
+    "@types/luxon": "^3.4.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
