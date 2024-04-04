@@ -41,6 +41,8 @@ export default function Navbar() {
                     <a
                         className="navbar-item"
                         href="https://www.figma.com/file/800ixgQz0v0hfquf5z5QqM/Remix-Rodeo-Wireframes?type=design&node-id=0%3A1&mode=design&t=fD6zpeJ2GwYz1MJO-1"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         <PanelsTopLeft className="mr-2" />
                         Wireframes
