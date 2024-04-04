@@ -3,10 +3,6 @@ import { ReactNode } from 'react';
 import supabase from '~/lib/supabase';
 
 export async function loader() {
-    // fetch from /orders route, not supabase
-    // const response = await fetch('/orders');
-    // console.log('response :>> ', response);
-
     const { data: orders, error } = await supabase
         .from('orders')
         .select('*')
@@ -16,7 +12,6 @@ export async function loader() {
         console.log('Error loading journal entries', error);
     }
     return { orders: orders || [] };
-    // return { orders: orders || [] };
 }
 
 export function Layout({ children }: { children: ReactNode }) {
