@@ -57,7 +57,7 @@ export async function action({
         item,
         orderedAt: new Date().toISOString(),
         isDone: false,
-        id: 5
+        id: 6
     };
 
     // Save the order to the database
