@@ -3,7 +3,8 @@ import menuItems from '../menu.json';
 import { Link, useLoaderData } from '@remix-run/react';
 import kebabCase from 'just-kebab-case';
 
-export async function clientLoader() {
+export async function loader() {
+
     return { menuItems };
 }
 
@@ -12,7 +13,7 @@ export function Layout({ children }: { children: ReactNode }) {
 }
 
 export default function MenuRoute() {
-    const { menuItems } = useLoaderData<typeof clientLoader>();
+    const { menuItems } = useLoaderData<typeof loader>();
 
     return (
         <>

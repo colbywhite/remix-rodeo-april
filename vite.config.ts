@@ -9,7 +9,7 @@ export default defineConfig({
     plugins: [
         remix({
             basename: '/remix-rodeo-april/',
-            ssr: false,
+            ssr: true,
             buildEnd(args) {
                 if (!args.viteConfig.isProduction) return;
 
