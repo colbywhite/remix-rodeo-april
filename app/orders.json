@@ -21,7 +21,7 @@
       "name": "cibus denuncio quod",
       "price": "$5.00",
       "category": "entree"
-    },
+    }
   },
   {
     "id": "c",
@@ -33,7 +33,7 @@
       "name": "crudelis cunae quod",
       "price": "$14.00",
       "category": "dessert"
-    },
+    }
   },
   {
     "id": "d",
@@ -45,6 +45,6 @@
       "name": "abstergo derelinquo venia",
       "price": "$16.00",
       "category": "appetizer"
-    },
+    }
   }
 ]
