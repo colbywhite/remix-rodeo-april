@@ -1,13 +1,10 @@
-import type { MetaFunction } from '@remix-run/node';
-import { LinkList } from '../components/LinkList';
-import { Link } from '@remix-run/react';
+import type { MetaFunction } from "@remix-run/node"
+import { LinkList } from "../components/LinkList"
+import { Link } from "@remix-run/react"
 
 export const meta: MetaFunction = () => {
-    return [
-        { title: 'Remix Rodeo' },
-        { name: 'description', content: 'Welcome to Remix Rodeo!' }
-    ];
-};
+    return [{ title: "Remix Rodeo" }, { name: "description", content: "Welcome to Remix Rodeo!" }]
+}
 
 export default function Index() {
     return (
@@ -17,50 +14,47 @@ export default function Index() {
                     <h3 className="title is-3">Prompt</h3>
                     <p>Build a restaurant ordering app.</p>
                     <p>
-                        Choose your favorite restaurant. Make up your own
-                        restaurant! Try to build out as complete of a site as
-                        possible.
+                        Choose your favorite restaurant. Make up your own restaurant! Try to build
+                        out as complete of a site as possible.
                     </p>
                     <p>
-                        Leverage core concepts in Remix like{' '}
+                        Leverage core concepts in Remix like{" "}
                         <a href="https://remix.run/docs/en/main/file-conventions/routes">
                             nested routes
                         </a>
-                        ,{' '}
+                        ,{" "}
                         <a href="https://remix.run/docs/en/main/discussion/progressive-enhancement">
                             progressive enhancement
-                        </a>{' '}
-                        and{' '}
+                        </a>{" "}
+                        and{" "}
                         <a href="https://remix.run/docs/en/main/discussion/pending-ui">
                             optimistic UI
-                        </a>{' '}
+                        </a>{" "}
                         to make your app shine!
                     </p>
                     <h3 className="title is-3">Starting point</h3>
-                    <p>
-                        Use Vite to compile your app. Everything else is up to
-                        you.
-                    </p>
+                    <p>Use Vite to compile your app. Everything else is up to you.</p>
                     <h4 className="title is-4">Options</h4>
                     <p>
-                        This repo (Vite + Remix SPA) has been setup for
-                        instructional use but can also be forked and used as a
-                        starter for your project.
+                        This repo (Vite + Remix SPA) has been setup for instructional use but{" "}
+                        <a href="https://github.com/remix-austin/remix-rodeo-april">
+                            can also be forked
+                        </a>{" "}
+                        and used as a starter for your project.
                     </p>
                     <p>
-                        A sample menu has been created at{' '}
-                        <Link to="menu">/menu</Link>. Feel free to also use
-                        these additional assets:
+                        A sample menu has been created at <Link to="menu">/menu</Link>. Feel free to
+                        also use these additional assets:
                     </p>
                     <LinkList
                         items={[
                             {
-                                label: 'Menu JSON',
-                                href: 'https://github.com/remix-austin/remix-rodeo-april/blob/main/app/menu.json'
+                                label: "Menu JSON",
+                                href: "https://github.com/remix-austin/remix-rodeo-april/blob/main/app/menu.json"
                             },
                             {
-                                label: 'Menu generator script',
-                                href: 'https://github.com/remix-austin/remix-rodeo-april/blob/main/generate-menu.js'
+                                label: "Menu generator script",
+                                href: "https://github.com/remix-austin/remix-rodeo-april/blob/main/generate-menu.js"
                             }
                         ]}
                     />
@@ -89,16 +83,16 @@ export default function Index() {
                     <LinkList
                         items={[
                             {
-                                label: 'Via 313',
-                                href: 'https://order.via313.com/locations/cedarparktx/menu'
+                                label: "Via 313",
+                                href: "https://order.via313.com/locations/cedarparktx/menu"
                             },
                             {
                                 label: `Torchy's Tacos`,
-                                href: 'https://ordering.torchys.com/online/order/menu'
+                                href: "https://ordering.torchys.com/online/order/menu"
                             },
                             {
                                 label: `Stiles Switch BBQ`,
-                                href: 'https://order.toasttab.com/online/stiles-switch-bbq-cedar-park'
+                                href: "https://order.toasttab.com/online/stiles-switch-bbq-cedar-park"
                             }
                         ]}
                     />
@@ -108,16 +102,16 @@ export default function Index() {
                     <LinkList
                         items={[
                             {
-                                label: 'SPA Mode Guide',
-                                href: 'https://remix.run/future/spa-mode'
+                                label: "SPA Mode Guide",
+                                href: "https://remix.run/future/spa-mode"
                             },
                             {
-                                label: 'Remix Docs',
-                                href: 'https://remix.run/docs'
+                                label: "Remix Docs",
+                                href: "https://remix.run/docs"
                             },
                             {
-                                label: 'Remix Youtube Playlists',
-                                href: 'https://www.youtube.com/@Remix-Run/playlists'
+                                label: "Remix Youtube Playlists",
+                                href: "https://www.youtube.com/@Remix-Run/playlists"
                             }
                         ]}
                     />
@@ -125,36 +119,36 @@ export default function Index() {
                     <LinkList
                         items={[
                             {
-                                label: 'Tailwind',
-                                href: 'https://tailwindcss.com/'
+                                label: "Tailwind",
+                                href: "https://tailwindcss.com/"
                             },
                             {
-                                label: 'Flowbite',
-                                href: 'https://flowbite.com/'
+                                label: "Flowbite",
+                                href: "https://flowbite.com/"
                             },
                             {
-                                label: 'Draft UI',
-                                href: 'https://draft-ui.com/'
+                                label: "Draft UI",
+                                href: "https://draft-ui.com/"
                             },
-                            { label: 'shadcn', href: 'https://ui.shadcn.com/' },
-                            { label: 'Bulma', href: 'https://bulma.io/' }
+                            { label: "shadcn", href: "https://ui.shadcn.com/" },
+                            { label: "Bulma", href: "https://bulma.io/" }
                         ]}
                     />
                     <h3 className="title is-3">React Resources</h3>
                     <LinkList
                         items={[
                             {
-                                label: 'Awesome React',
-                                href: 'https://github.com/enaqx/awesome-react?tab=readme-ov-file#awesome-react-'
+                                label: "Awesome React",
+                                href: "https://github.com/enaqx/awesome-react?tab=readme-ov-file#awesome-react-"
                             },
                             {
-                                label: 'Awesome React Components',
-                                href: 'https://github.com/brillout/awesome-react-components'
+                                label: "Awesome React Components",
+                                href: "https://github.com/brillout/awesome-react-components"
                             }
                         ]}
                     />
                 </div>
             </div>
         </>
-    );
+    )
 }
